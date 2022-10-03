@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+
+      body {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "kaas kaas kaas kaas"
+          "worst worst worst worst"
+          " ham ham ham ham"
+          "ei ei ei ei";
+        max-width: 30em;
+        margin: 0 auto;
+        padding: 1em;
+        gap: 1em;
+      }
+
+      header {
+        grid-area: kaas;
+        rotate: 35deg;
+      }
+
+      nav {
+        grid-area: worst;
+        rotate: -35deg;-bottom: 100px;
+      }
+
+      main {
+        grid-area: ham;
+      }
+
+      footer {
+        grid-area: ei;
+      }
+
+
     </style>
   </head>
   <body id="advanced-layout-2">

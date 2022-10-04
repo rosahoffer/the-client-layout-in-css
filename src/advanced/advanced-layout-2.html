@@ -12,24 +12,25 @@
         display: grid;
         grid-template: 1fr 1fr 1fr 1fr;
         grid-template-areas:
-          "kaas kaas kaas kaas"
-          "worst worst worst worst"
-          " ham ham ham ham"
-          "ei ei ei ei";
+          "kaas"
+          "worst"
+          "ham"
+          "ei";
         max-width: 30em;
         margin: 0 auto;
         padding: 1em;
         gap: 1em;
+        margin-top: 200px;
       }
 
       header {
         grid-area: kaas;
-        rotate: 35deg;
+        rotate: -15deg;
       }
 
       nav {
-        grid-area: worst;
-        rotate: -35deg;-bottom: 100px;
+        grid-area: kaas;
+        rotate: 15deg;
       }
 
       main {
